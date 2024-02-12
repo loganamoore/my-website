@@ -145,17 +145,16 @@ textarea{
     margin: 0.6rem 0.6rem;
 }
 
-.block-title div:nth-of-type(1){ background-color: var(--red); transform: rotate(5deg); }       /* P */
-.block-title div:nth-of-type(2){ background-color: var(--yellow); transform: rotate(7deg); }    /* R */
-.block-title div:nth-of-type(3){ background-color: var(--pink); transform: rotate(-5deg); }     /* O */
-.block-title div:nth-of-type(4){ background-color: var(--green); transform: rotate(3deg); }     /* J */
-.block-title div:nth-of-type(5){ background-color: var(--blue); transform: rotate(8deg); }      /* E */
-.block-title div:nth-of-type(6){ background-color: var(--yellow); transform: rotate(-2deg); }   /* C */
-.block-title div:nth-of-type(7){ background-color: var(--red); transform: rotate(-7deg); }      /* T */
-.block-title div:nth-of-type(8){ background-color: var(--green); transform: rotate(5deg); }     /* S */
+.block-title div:nth-of-type(1){ transform: rotate(5deg); }  /* P */
+.block-title div:nth-of-type(2){ transform: rotate(7deg); }  /* R */
+.block-title div:nth-of-type(3){ transform: rotate(-5deg); } /* O */
+.block-title div:nth-of-type(4){ transform: rotate(3deg); }  /* J */
+.block-title div:nth-of-type(5){ transform: rotate(8deg); }  /* E */
+.block-title div:nth-of-type(6){ transform: rotate(-2deg); } /* C */
+.block-title div:nth-of-type(7){ transform: rotate(-7deg); } /* T */
+.block-title div:nth-of-type(8){ transform: rotate(5deg); }  /* S */
 
 #projects{
-    /*list-style: none;*/
     list-style: lower-alpha;
     padding: 0;
 
@@ -166,10 +165,6 @@ textarea{
     max-width: 700px;
     margin: 3rem 0;
     padding: 0 25px;
-
-    /*border: 3px solid var(--black);
-    box-shadow: 6px 6px #000;
-    border-radius: 0.5rem;*/
 }
 
 #projects h6{

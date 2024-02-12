@@ -1,2 +1,2 @@
-# my-website
-Personal website to link projects and social media.
+# My Website
+My own personal website to link projects and social media.
