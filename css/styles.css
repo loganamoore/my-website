@@ -17,12 +17,12 @@
 .pink{ color: var(--pink); }
 .yellow{ color: var(--yellow); }
 
-/*.bg-red{ background-color: var(--red); }
+.bg-red{ background-color: var(--red); }
 .bg-green{ background-color: var(--green); }
 .bg-blue{ background-color: var(--blue); color: var(--white); }
 .bg-sky{ background-color: var(--sky); }
 .bg-pink{ background-color: var(--pink); }
-.bg-yellow{ background-color: var(--yellow); }*/
+.bg-yellow{ background-color: var(--yellow); }
 
 html, body{
     margin: 0;
@@ -90,6 +90,10 @@ input, textarea{
 
 input[type="submit"]{
     box-shadow: 0 6px var(--black);
+    width: 84%;
+    font-weight: 900;
+    letter-spacing: 0.25rem;
+    cursor: pointer;
 }
 
 label{
