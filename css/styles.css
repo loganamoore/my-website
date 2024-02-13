@@ -4,9 +4,10 @@
     --red: #FF4911;
     --green: #2FFF2F;
     --blue: #3300FF;
-    --sky: #7DF9FF;
+    --sky: #cfe2ff/*#7DF9FF*/;
     --pink: #FF00F5;
     --yellow: #FFFF00;
+    --orange: #FFC700;
 }
 
 .red{ color: var(--red); }
@@ -16,12 +17,12 @@
 .pink{ color: var(--pink); }
 .yellow{ color: var(--yellow); }
 
-.bg-red{ background-color: var(--red); }
+/*.bg-red{ background-color: var(--red); }
 .bg-green{ background-color: var(--green); }
 .bg-blue{ background-color: var(--blue); color: var(--white); }
 .bg-sky{ background-color: var(--sky); }
 .bg-pink{ background-color: var(--pink); }
-.bg-yellow{ background-color: var(--yellow); }
+.bg-yellow{ background-color: var(--yellow); }*/
 
 html, body{
     margin: 0;
@@ -43,7 +44,7 @@ h2{ font-size: 5rem; }
 h3{ font-size: 4rem; }
 h4{ font-size: 3rem; }
 h5{ font-size: 2rem; }
-h6{ font-size: 1.75rem; }
+h6{ font-size: 1.5rem; }
 
 main{
     padding: 1rem 2rem;
@@ -118,12 +119,15 @@ textarea{
     margin-right: 5%;
 }
 
-.social-media .arrow{
-    width: 30px;
+.arrow{
     position: relative;
     top: 0.25rem;
     margin-left: 1rem;
     transition: all 0.2s ease-out;
+}
+
+.social-media .arrow{
+    width: 30px;
 }
 
 .social-media:hover .arrow{
@@ -155,20 +159,34 @@ textarea{
 .block-title div:nth-of-type(8){ transform: rotate(5deg); }  /* S */
 
 #projects{
-    list-style: lower-alpha;
+    list-style: none;
     padding: 0;
+    padding-bottom: 3rem;
 
     border-bottom: dotted 3px var(--black);
 }
 
 #projects li{
     max-width: 700px;
-    margin: 3rem 0;
+    margin: 2.5rem 0;
     padding: 0 25px;
+
+    margin-left: 8rem;
 }
 
-#projects h6{
-    margin-top: 1rem;
+#projects a:hover .arrow{
+    margin-left: 1.5rem;
+}
+
+#projects h5{
+    margin: 0;
+    padding: 1rem 0 0.5rem 0.5rem;
+    font-size: 1.5rem;
+}
+
+#projects span{
+    margin-left: 0.5rem;
+    white-space: nowrap;
 }
 
 #projects p{
@@ -178,4 +196,47 @@ textarea{
 
 #contact-form{
     margin: 2rem 0;
+}
+
+.year{
+    position: absolute;
+    left: 2rem;
+    font-size: 3rem;
+}
+
+.year:after{
+    content: " ";
+    display: block;
+    width: 7rem;
+    height: 1.75rem;
+    position: relative;
+    top: -1.75rem;
+    left: 0.2rem;
+    z-index: -1;
+
+    box-shadow: 4px 4px var(--black);
+}
+
+.year-red:after{ background-color: var(--red); }
+.year-green:after{ background-color: var(--green); }
+.year-blue:after{ background-color: var(--blue); color: var(--white); }
+.year-sky:after{ background-color: var(--sky); }
+.year-pink:after{ background-color: var(--pink); }
+.year-yellow:after{ background-color: var(--yellow); }
+
+@media(max-width: 500px){
+    .year{
+        font-size: 2rem;
+        left: 1rem;
+    }
+
+    .year:after{
+        width: 4rem;
+        height: 1.25rem;
+        top: -1rem;
+    }
+
+    #projects li{
+        margin-left: 4rem;
+    }
 }
